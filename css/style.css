@@ -1,0 +1,226 @@
+:root {
+	--primary-color: #f98f26;
+	--secondary-color: #fbb167;
+	--third-color: #f2f2f2;
+	--c-third: #f2f5fc;
+	--td: #e6e6e6;
+}
+
+::selection {
+	background-color: rgba(251, 177, 103, 0.4);
+}
+
+img {
+	pointer-events: none;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* scrollbar */
+
+body {
+	--sb-size: 11px;
+}
+
+body::-webkit-scrollbar {
+	width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--third-color);
+	border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	body {
+		scrollbar-color: var(--primary-color) var(--third-color);
+	}
+}
+
+body {
+	font-family: "sansx";
+	font-size: 1rem;
+	background-color: #fcfcfc;
+	scroll-behavior: smooth;
+}
+
+.doran {
+	font-family: "doranfnt";
+	font-weight: 700;
+}
+
+.c-primary {
+	background-color: var(--primary-color);
+}
+
+.c-primary:hover {
+	background-color: var(--secondary-color);
+}
+
+.c-secondary {
+	background-color: var(--secondary-color);
+}
+
+.c-third {
+	background-color: var(--c-third);
+}
+
+.c-third-gradient {
+	background: linear-gradient(
+		0deg,
+		rgba(252, 252, 252, 1) 0%,
+		rgba(242, 245, 252, 1) 100%
+	);
+}
+
+.textb-border {
+	border-bottom: 3px solid var(--primary-color);
+}
+
+.primary-outline-btn {
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.primary-outline-btn:hover {
+	background-color: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+
+.banner-border {
+	border-radius: 0 0 6px 6px;
+}
+
+.t-primary {
+	color: var(--primary-color);
+}
+
+.t-secondary {
+	color: var(--secondary-color);
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.bg-glass {
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+.course-list-item:hover {
+	background-color: rgb(240, 240, 240);
+}
+
+.shadow-box {
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.z-index-back {
+	z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+	.position-md-fixed {
+		position: fixed;
+	}
+}
+
+@media screen and (min-width: 389px) {
+	.mt-xs-0 {
+		margin-top: 0;
+	}
+}
+
+/* ----- Styles ----- */
+/* header */
+.intro-section {
+	background: url(../images/header-bg.png) top center no-repeat;
+	background-size: cover;
+}
+
+.nav-link:focus {
+	box-shadow: none;
+}
+
+/* course */
+.course-list {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	width: 300px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.course-list-item {
+	padding: 12px 10px;
+	display: flex;
+}
+
+.course-item-icon,
+.plans-icon {
+	display: flex;
+	justify-content: left;
+	width: 30px;
+}
+
+/* accordion */
+.accordion-button {
+	background-color: white !important;
+}
+.accordion-button:focus {
+	background-color: var(--secondary-color) !important;
+}
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+/* service section */
+.service-item {
+	border-bottom: 4px solid var(--primary-color);
+	transition: all 0.3s;
+}
+
+.service-item .read-more {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.service-item:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.service-item:hover .read-more {
+	color: #fff !important;
+}
+
+/* plans */
+.plans-section .card {
+	transition: all 0.5s;
+}
+
+.plans-section .card img {
+	height: 272.4px;
+}
+
+.plans-section .card:hover {
+	transform: scale(1.05);
+}

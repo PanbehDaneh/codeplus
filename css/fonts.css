@@ -1,0 +1,30 @@
+/* ----- Yekan ----- */
+@font-face {
+	font-family: "sansx";
+	font-weight: 700;
+	src: url(../fonts/iransans/IRANSansXFaNum-Bold.woff) format("woff"),
+		url(../fonts/iransans/IRANSansXFaNum-Bold.woff2) format("woff2"),
+		url(../fonts/iransans/IRANSansXFaNum-Bold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "sansx";
+	font-weight: 400;
+	src: url(../fonts/iransans/IRANSansXFaNum-Regular.woff) format("woff"),
+		url(../fonts/iransans/IRANSansXFaNum-Regular.woff2) format("woff2"),
+		url(../fonts/iransans/IRANSansXFaNum-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "sansx";
+	font-weight: 300;
+	src: url(../fonts/iransans/IRANSansXFaNum-Light.woff) format("woff"),
+		url(../fonts/iransans/IRANSansXFaNum-Light.woff2) format("woff2"),
+		url(../fonts/iransans/IRANSansXFaNum-Light.ttf) format("truetype");
+}
+/* ----- Doran ----- */
+@font-face {
+	font-family: "doranfnt";
+	font-weight: 700;
+	src: url(../fonts/doran/DoranFaNum-ExtraBold.woff) format("woff"),
+		url(../fonts/doran/DoranFaNum-ExtraBold.woff2) format("woff2"),
+		url(../fonts/doran/DoranFaNum-ExtraBold.ttf) format("truetype");
+}
